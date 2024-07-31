@@ -1,0 +1,20 @@
+.showdata{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.showdata ul .li-div{
+    display: flex;
+    gap: 2rem;
+}
+.li-div{
+    background-color: #ccc;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+.showdata ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}

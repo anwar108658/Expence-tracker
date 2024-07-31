@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #313030;
+}
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    padding: .5rem 2rem;
+}
+
+.container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-css {
+    display: none;
+}
+
+.container nav .logo h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+.container nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    & img{
+        width: 3rem;
+    }
+}
+
+.nav-link {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link li {
+    list-style: none;
+}
+
+.nav-link li a {
+    background-color: rgb(20, 150, 244);
+    color: #fff;
+    border-radius: .5rem;
+    padding: .3rem .5rem;
+    text-decoration: none;
+}
+
+.nav-link li a:focus {
+    background-color: rgb(65, 99, 124);
+}
+
+@media (max-width: 700px) {
+    .icon-css {
+        display: block;
+        width: 2.5rem;
+        cursor: pointer;
+        background-color: rgb(131, 203, 255);
+        border-radius: 50%;
+    }
+
+    .nav-link {
+        /* display: none; */
+        flex-direction: column;
+        width: 230px;
+        position: absolute;
+        background-color: #313030;
+        top: -300px;
+        right: 0;
+        padding: 1rem;
+        border-radius: 0 0 .5rem .5rem;
+        transition: all .3s ease-out;
+    }
+
+    .nav-link.active {
+        display: flex;
+        top: 56px;
+    }
+
+    .nav-link li a {
+        width: 100%;
+        display: block;
+        padding: .5rem;
+        text-align: center;
+    }
+}
